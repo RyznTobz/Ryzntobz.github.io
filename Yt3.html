@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <script src="index.js"></script> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <style>
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+.result img{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.a{
+  font-family: Courier New;
+  font-family: Courier New;
+  text-align: center;
+}
+.b{
+  font-size: 12vmin;
+  padding: 4%;
+}
+.a p{
+  font-size: 5vmin;
+  padding: 2%;
+}
+  </style> 
+  <title>List</title> 
+ </head> 
+ <body> 
+<div class="a">
+  <div class="b">SFW</div>
+    <p type="button" onclick="a()" id="a">Neko</p>
+    <p>Waifu</p>
+    <p>Shinobu</p>
+    <p>Megumin</p>
+    <p>BUlly</p>
+    <p>Cudlle</p>
+    <p>Cerry</p>
+    <p>Hug</p>
+    <p>Awoo</p>
+    <p>Kiss</p>
+    <p>Lick</p>
+    <p>Yeet</p>
+    <p>Pat</p>
+    <p>Smug</p>
+    <p>Blush</p>
+    <p>Smile</p>
+    <p>Wave</p>
+    <p>Hightfive</p>
+    <p>HandHold</p>
+    <p>Nom</p>
+    <p>Bite</p>
+    <p>Glump</p>
+    <p>Slap</p>
+    <p>Kick</p>
+    <p>Kill</p>
+    <p>Happy</p>
+    <p>Wink</p>
+    <p>Poke</p>
+    <p>Dance</p>
+    <p>Cringe</p>
+  <div class="b">NSFW</div>
+    <p>Waifu</p>
+    <p>Neko</p>
+    <p>Trap</p>
+    <p>Blowjob</p>
+  <div class="b">NAME EDIT</div>
+    <p>Logo</p>
+    <p>Neon</p>
+    <p>Pohub</p>
+    <p>BlackPink</p>
+    <p>Newtron</p>
+    <p>3D</p>
+    <p>Galaxy</p>
+    <p>WaterColor</p>
+</div>
+<script>
+function a(){
+  var data = document.getElementById('a');
+  
+  fetch('https://api.waifu.pics/sfw/neko')
+    .then(res => res.json())
+    .then(data => {
+      data.innerHTML = `<img src=${data.url} />`
+    });
+  
+}
+</script>
+ </body>
+</html>

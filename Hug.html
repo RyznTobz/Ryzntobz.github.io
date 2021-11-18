@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <script src="index.js"></script> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <style>
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+.result img{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+  </style>
+  <title>SFW</title> 
+ </head> 
+ <body> 
+  <div class="results"> 
+   <div id="res" class="result"></div> 
+  </div> 
+  <script>
+const res = document.getElementById('res','resi');
+  fetch('https://api.waifu.pics/sfw/hug')
+    .then(res => res.json())
+    .then(data => {
+      res.innerHTML = `<img src=${data.url} />`
+    });
+</script> 
+ </body>
+</html>

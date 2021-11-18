@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <script src="index.js"></script> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <style>
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+p{
+  color: white;
+  font-family: Courier New;
+  font-size: 2em;
+}
+center {
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#userInput{
+  width: 35%;
+}
+.result img{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+  </style> 
+  <title>EDIT</title> 
+ </head> 
+ <body> 
+ <center>
+      <p>Masukan Input</p>
+  <input type="text" id="userInput" value="">
+    <a href="https://docs-jojo.herokuapp.com/api/ttlogo?text1=JOJO&text2=API=" id="link">
+  <input type="button" onclick="changeText2()" value="Kirim"></a>
+  </center>
+  <script>
+function changeText2()
+{
+    var input = document.getElementById('userInput').value;
+ 
+    document.getElementById("link").href = "https://docs-jojo.herokuapp.com/api/neon_light?text="+input;
+}
+</script> 
+ </body>
+</html>
