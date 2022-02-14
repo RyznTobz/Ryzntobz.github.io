@@ -8,11 +8,8 @@ body {
 img {
   width: 80%;
 }
-p {
-  margin-top: ;
-}
 #info span {
-word-spacing: -10px;
+
 }
 #kk {
   background-color: ;
@@ -24,12 +21,10 @@ word-spacing: -10px;
   box-shadow: 1px 1px 1px 1px black;
 }
 #belanja {
-  display: block;
   background-color: #01bf01;
-  width: 20%;
-  height: 10%;
   box-shadow: 0.1px 0.1px 0.1px 0.1px black;
   color: white;
+  vertical-align: middle;
 }
 #halal {
   left: 0%;
@@ -44,7 +39,6 @@ a {
 }
 #belanja p {
   display: table-cell;
-  vertical-align: middle;
 }
 #belanja img{
   width: 40%;
