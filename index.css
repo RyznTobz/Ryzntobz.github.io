@@ -1,13 +1,18 @@
 body {
   font-family: "Lucida Console", "Courier New", monospace;
-  padding: 0;
-  margin: 0;
+}
+#ke {
+  position: relative;
+  top: 2%;
 }
 img {
   width: 80%;
 }
 p {
   margin-top: ;
+}
+#info span {
+word-spacing: -10px;
 }
 #kk {
   background-color: ;
@@ -19,10 +24,10 @@ p {
   box-shadow: 1px 1px 1px 1px black;
 }
 #belanja {
-  direction: table;
+  display: block;
   background-color: #01bf01;
   width: 20%;
-  height: 40%;
+  height: 10%;
   box-shadow: 0.1px 0.1px 0.1px 0.1px black;
   color: white;
 }

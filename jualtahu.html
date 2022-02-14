@@ -17,11 +17,11 @@
     <!--<span id="halal">
         halal 100%
     </span> -->
-    <p>
-      Komposisi : 
+    <p id="pep">
+      <span style="color: blue;">Keripik tahu</span> dengan tahu pilihan dijamin kriuk dan bikin nagih
     </p>
     <p>
-      Tahu, Tepung, Air
+      
     </p>
     <a href="https://wa.me/62895703023772?text=Assalamualaikum">
     <div id="belanja">
@@ -33,11 +33,81 @@
     </a>
     <div id="info">
      <!-- <img src="gambar/1.png"> -->
-     <p>
-       Harga : <span id="kk">7k</span>
+       <p>
+       Harga : 7k
+       </br>
+       Stock :
+       <span>
+       <span id="satu"></span>
+       <span id="dua"></span>
+       <span id="tiga"></span>
+       </span>
        </p><br>
     </div>
     </div>
   </center>
+  <center>
+  <div class="box">
+    <h1>
+      Bola Maut
+    </h1>
+    <img id="jl" src="bola.jpg">
+    <!--<span id="halal">
+        halal 100%
+    </span> -->
+    <p id="pep">
+      <span style="color: blue;">Bola maut</span> dengan tahu pilihan dijamin sedap dan bikin nagih
+    </p>
+    <p>
+      
+    </p>
+    <a href="https://wa.me/62895703023772?text=Assalamualaikum">
+    <div id="belanja">
+     <!-- <img src="gambar/1.png"> -->
+     <p>
+       Beli
+     </p>
+    </div>
+    </a>
+    <div id="info">
+     <!-- <img src="gambar/1.png"> -->
+       <p>
+       Harga : 7k
+       </br>
+       Stock : 
+       <span>
+       <span id="satu1"></span>
+       <span id="dua2"></span>
+       <span id="tiga3"></span>
+       </span>
+       </p><br>
+    </div>
+    </div>
+    <br>
+  </center>
+  <script>
+  alert("Dibeli ya Sob")
+    setInterval(() => {
+      document.getElementById('satu').innerHTML = 
+      Math.floor(Math.random() * 9)
+    }, 1000 )
+    setInterval(() => {
+      document.getElementById('dua').innerHTML = 
+      Math.floor(Math.random() * 9)
+    }, 100 )
+    setInterval(() => {
+      document.getElementById('tiga').innerHTML = 
+      Math.floor(Math.random() * 9)
+    }, 10 )
+    setInterval(() => {
+      document.getElementById('satu1').innerHTML = 
+      Math.floor(Math.random() * 9)
+      document.getElementById('dua2').innerHTML = 
+      Math.floor(Math.random() * 9)
+      document.getElementById('tiga3').innerHTML = 
+      Math.floor(Math.random() * 9)
+    
+    }, 10 )
+  </script>
 </body>
 </html>
