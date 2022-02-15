@@ -8,11 +8,12 @@ body {
 img {
   width: 80%;
 }
-#info span {
-
-}
 #kk {
+  
   background-color: ;
+}
+#pilihan {
+  
 }
 .box {
   width: 70%;
@@ -33,6 +34,7 @@ img {
   color: white;
   background-color: #01bf01;
 }
+
 a {
   text-decoration: none;
   color: black;

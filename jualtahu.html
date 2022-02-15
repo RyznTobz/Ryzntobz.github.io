@@ -5,22 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <link rel="icon" href="tahu.jpeg" type="image/icon type">
-  <script src=""></script>
   <title>JualTahu</title>
 </head>
 <body>
   <center>
   <div class="box">
     <h1>
-      Kripik tahu
+      Kripik Tahu
     </h1>
     <img id="jl" src="tahu.jpeg">
     <!--<span id="halal">
         halal 100%
     </span> -->
     <p id="pep">
-      <span style="color: blue;">Keripik tahu</span> dengan tahu pilihan dijamin kriuk dan bikin nagih
+      <span style="color: blue;">Keripik Tahu</span> dengan tahu pilihan dijamin kriuk dan bikin nagih
     </p>
+    <p id="pilihan">Pilihan rasa :</p>
+<span id="rasa">
+<span style="color: red;">•</span> Original
+<span style="color: red;">•</span> Balado
+</span>
     <p>
       
     </p>
@@ -31,41 +35,45 @@
        Beli
      </p>
     </span>
-    <a href="https://wa.me/62895703023772?text=Assalamualaikum">
+    </a>
     <span id="belanja" style="background-color: #2497ff;">
      <!-- <img src="gambar/1.png"> -->
-     <p>
-       Info
-     </p>
-    </span>
-    </a>
-    <div id="info">
+  <p onclick="on()" id="InfoKr">Info</p>
+    <div id="go">
      <!-- <img src="gambar/1.png"> -->
-       <p>
+       <p id="7k" style="display: block; color: black;">
        Harga : 7k
-       </br>
+       </p>
+</span>
+       <!--
        Stock :
        <span style="word-spacing: -10px;">
        <span id="satu"></span>
        <span id="dua"></span>
        <span id="tiga"></span>
-       </span>
-       </p><br>
+       </span> -->
+       <br>
     </div>
     </div>
   </center>
   <center>
   <div class="box">
     <h1>
-      Bola Maut
+      Bola Tahu
     </h1>
     <img id="jl" src="bola.jpg">
     <!--<span id="halal">
         halal 100%
     </span> -->
-    <p id="pep">
-      <span style="color: blue;">Bola maut</span> dengan tahu pilihan dijamin sedap dan bikin nagih
+    <p id="pep1" >
+      <span  style="color: blue;">Bola Tahu</span> dengan tahu pilihan dijamin enak dan bikin nagih
     </p>
+        <p id="pilihan1">Pilihan rasa :</p>
+<span id="rasa1">
+<span style="color: red;">•</span> Original
+<span style="color: red;">•</span> Balado
+</span>
+    <p>
     <p>
       
     </p>
@@ -75,32 +83,76 @@
      <p>
        Beli
      </p>
+     </a>
     </span>
-    <a href="https://wa.me/62895703023772?text=Assalamualaikum">
     <span id="belanja" style="background-color: #2497ff;">
      <!-- <img src="gambar/1.png"> -->
-     <p>
-       Info
-     </p>
+     <p id="InfoBo" onclick="onn()">Info</p>
     </span>
-    </a>
+    
     <div id="info">
      <!-- <img src="gambar/1.png"> -->
-       <p>
+       <p id="7R">
        Harga : 7k
-       </br>
+       </br> <!--
        Stock : 
        <span style="word-spacing: -10px;">
        <span id="satu1"></span>
        <span id="dua2"></span>
        <span id="tiga3"></span>
-       </span>
+       </span> -->
        </p><br>
     </div>
     </div>
     <br>
   </center>
   <script>
+  
+  function on(){
+  const dock = document.getElementById('InfoKr').innerHTML
+  console.log(dock)
+  if (dock == "Info" ){
+  document.getElementById('pep').style.display="none"
+  document.getElementById('pilihan').innerHTML = "<b>Bola tahu</b> mempunyai banyak kandungan gizi, yang berasal dari kedelai, Kedelai sendiri merupakan bahan makanan yang kaya akan kandungan gizi."
+  document.getElementById('rasa').style.display = "none"
+  document.getElementById('7k').style.display ="none"
+  document.getElementById("pilihan").style.textAlign = "left"
+  document.getElementById("pilihan").style.padding = "0px 5%"
+  document.getElementById('InfoKr').innerHTML = "Kembali"
+  }
+  if ( dock == "Kembali"){
+  document.getElementById('pep').style.display="block"
+  document.getElementById('pilihan').innerHTML = "Pilihan rasa :"
+  document.getElementById('rasa').style.display = "block"
+  document.getElementById('7k').style.display ="block"
+  document.getElementById("pilihan").style.textAlign = ""
+  document.getElementById("pilihan").style.padding = "0px 0px"
+  document.getElementById('InfoKr').innerHTML = "Info"
+  }
+}
+  function onn(){
+  const dock = document.getElementById('InfoBo').innerHTML
+  console.log(dock)
+  if (dock == "Info" ){
+  document.getElementById('pep1').style.display="none"
+  document.getElementById('pilihan1').innerHTML = "<b>Bola tahu</b> merupakan salah satu jajanan yang digemari banyak orang. Perpaduan tahu yang dibalur tepung crispy membuat rasanya begitu renyah dan gurih."
+  document.getElementById('rasa1').style.display = "none"
+  document.getElementById('7R').style.display ="none"
+  document.getElementById("pilihan1").style.textAlign = "left"
+  document.getElementById("pilihan1").style.padding = "0px 5%"
+  document.getElementById('InfoBo').innerHTML = "Kembali"
+  }
+  if ( dock == "Kembali"){
+  document.getElementById('pep1').style.display="block"
+  document.getElementById('pilihan1').innerHTML = "Pilihan rasa :"
+  document.getElementById('rasa1').style.display = "block"
+  document.getElementById('7R').style.display ="block"
+  document.getElementById("pilihan1").style.textAlign = ""
+  document.getElementById("pilihan1").style.padding = "0px 0px"
+  document.getElementById('InfoBo').innerHTML = "Info"
+  }
+}
+  /*
     setInterval(() => {
       document.getElementById('satu').innerHTML = 
       Math.floor(Math.random() * 9)
@@ -116,6 +168,7 @@
       Math.floor(Math.random() * 9)
     
     }, 3000 )
+    */
   </script>
 </body>
 </html>
