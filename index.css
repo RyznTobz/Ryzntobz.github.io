@@ -12,8 +12,11 @@ img {
   
   background-color: ;
 }
-#pilihan {
-  
+#pilihan, #pilihan1 {
+  padding: 0px 5%;
+}
+#pep, #pep1 {
+  padding: 0px 5%;
 }
 .box {
   width: 70%;
@@ -38,6 +41,9 @@ img {
 a {
   text-decoration: none;
   color: black;
+}
+input,textarea,button,select,a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 #belanja p {
   display: table-cell;
