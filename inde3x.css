@@ -1,0 +1,27 @@
+body , a{
+  font-family: "Lucida Console", "Courier New", monospace;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+img{
+  margin: auto auto;
+  width: 70%;
+  height: 90%;
+  background-color: white;
+  box-shadow: 1px 1px 1px  black;
+}
+.kotak {
+  margin: auto auto;
+  width: 40%;
+  height: ;
+  background-color: white;
+  box-shadow: 1px 1px 1px black;
+}
+.ref{
+  position: fixed;
+  margin-top: 90vh;
+  color: ;
+  border: 1px solid  black;
+  background-color:;
+}
