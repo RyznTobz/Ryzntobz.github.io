@@ -70,12 +70,11 @@ body , a{
     background-position: 200%;
   }
 }
- }  
 .titl{
  text-decoration: underline;
  padding: 3%;
  font-size: 4vw;
-  z-index: ;
+  z-index: 99;
 }
 .titli{
 text-decoration: underline;
