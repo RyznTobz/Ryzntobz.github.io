@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="https://drive.google.com/uc?export=view&id=1uu1KlWaqgNGa1rFZNAGC5f-JD9InwkEY">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="inde3x.css">
+  <title>RyznTobz2</title>
+</head>
+<body>
+<center>
+<br>
+ <div class="ref">
+  <a href="index.html"><span>&nbsp;Aboud&nbsp;</span></a>
+ <a href="Download.html"><span id="id">&nbsp;Dloader&nbsp;</span></a>
+ <a href="Image.html"><span>&nbsp;Image&nbsp;</span></a>
+ <a href="Create.html"><span>&nbsp;Create&nbsp;</span></a>
+ </div>
+
+<div id="img"></div>
+<div id="title">MasukanURL</div>
+<div id="down"></div>
+<br>
+<input id="kotak" type="text" placeholder="" value="
+"></input>
+<br>
+</br>
+<span id="pilih1" onclick="on()">&nbsp;Ytmp3&nbsp;</span>
+<span id="pilih" onclick="on1()">&nbsp;Ytmp4&nbsp;</span>
+<br>
+</br>
+<br>
+<p>Website agak lemot harap tunggu 3-5 detik ( jika valid )</p>
+<br>
+</br>
+<br>
+</center>
+<script>
+const sy = document.getElementById("pilih1")
+const sy1 = document.getElementById("pilih")
+  function on(){
+    sy.style.backgroundColor = "black"
+    sy.style.color = "white"
+    sy1.style.backgroundColor = "white"
+    sy1.style.color = "black"
+    const ion = document.getElementById('img')
+    const jud = document.getElementById('title')
+    const down = document.getElementById('down')
+    const inpu = document.getElementById('kotak').value
+    fetch(`https://leyscoders-api.herokuapp.com/api/ytmp3?url=${inpu}`)
+    .then(res => res.json())
+    .then(data => {
+      ion.innerHTML  = `<img src=${data.result[0].thumb} />`
+      jud.innerHTML  = `<p>=${data.result[0].title}`
+     down.innerHTML = `<a href=${data.result[0].url_audio}>`+"DownloadMP3"
+      console.log(result)
+    });
+  }
+  function on1(){
+    sy.style.backgroundColor = "white"
+    sy.style.color = "black"
+    sy1.style.backgroundColor = "black"
+    sy1.style.color = "white"
+    const ion = document.getElementById('img')
+    const jud = document.getElementById('title')
+    const down = document.getElementById('down')
+    const inpu = document.getElementById('kotak').value
+    fetch(`https://leyscoders-api.herokuapp.com/api/ytmp4?url=${inpu}`)
+    .then(res => res.json())
+    .then(data => {
+      ion.innerHTML  = `<img src=${data.result[0].thumb} />`
+      jud.innerHTML  = `<p>=${data.result[0].title}`
+     down.innerHTML = `<a href=${data.result[0].url_video}>`+"DownloadMP4"
+      console.log(result)
+    });
+  }
+</script>
+</body>
+</html>

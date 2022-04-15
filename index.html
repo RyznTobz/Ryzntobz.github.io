@@ -2,71 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="https://drive.google.com/uc?export=view&id=1uu1KlWaqgNGa1rFZNAGC5f-JD9InwkEY">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="inde3x.css">
-  <script src="js/index.js"></script>
-  <title>RyznTobz2</title>
+  <title>CardName</title>
 </head>
 <body>
-  <center>
-    <br>
- <div onClick="window.location.reload()" class="ref">&nbsp;Clear&nbsp;</div>
- <div id="a"></div>
-    </br>
- <div onclick="on()" class="kotak">Waifu</div>
-    <br>
- <div id="b"></div>
-    </br>
- <div onclick="on1()" class="kotak">Neko</div>
-    <br>
- <div id="c"></div>
-    </br>
- <div onclick="on2()" class="kotak">∆woo</div>
-    <br>
- <div id="d"></div>
-    </br>
- <div onclick="on3()" class="kotak">Awaifu</div>
-    <br>
- 
-  </center>
-<script>
-function on(){
-  const box = document.getElementById('a');
-const api1 = 'https://api.waifu.pics/sfw//waifu' ;
-  fetch(api1)
-    .then(res => res.json())
-    .then(data => {
-      box.innerHTML = `<img src=${data.url} />`
-    });
-}
-function on1(){
-  const box = document.getElementById('b');
-const api1 = 'https://api.waifu.pics/sfw/neko' ;
-  fetch(api1)
-    .then(res => res.json())
-    .then(data => {
-      box.innerHTML = `<img src=${data.url} />`
-    });
-}
-function on2(){
-  const box = document.getElementById('c');
-const api1 = 'https://api.waifu.pics/sfw/awoo' ;
-  fetch(api1)
-    .then(res => res.json())
-    .then(data => {
-      box.innerHTML = `<img src=${data.url} />`
-    });
-}
-function on3(){
-async function getISS(){
-    const response = await fetch('https://api.animemoe.us/waifu/random/');
-    const data = await response.json();
-    const {original_image} = data;
-    document.getElementById('d').innerHTML = `<img src=${original_image} />`
-  }
-    getISS();
-}
-
-</script>
+   <div class="ref">
+  <a href="index.html"><span id="id">&nbsp;Aboud&nbsp;</span></a>
+ <a href="Download.html"><span>&nbsp;Dloader&nbsp;</span></a>
+ <a href="Image.html"><span>&nbsp;Image&nbsp;</span></a>
+ <a href="Create.html"><span>&nbsp;Create&nbsp;</span></a>
+ </div>
+	<div class="card">
+	  <center>
+	    <div class="box"></div>
+	   <img class="i" src="1.jpg">
+	  <div class="titli">Nama</div>
+	  <div class="name">Firmansyah</div>
+	  <div class="titl">Status</div>
+	  <div class="name">Learning</div>
+	  <div class="titl">Links</div>
+	  <div class="name">
+	    <a href="https://ryzntobz.github.io/">Nothing</a>
+	    </div>
+	  <div class="titl">Made with</div>
+	  <div class="name">HTML/CSS/JS</div>
+	  </center>
+	</div>
 </body>
 </html>
