@@ -5,18 +5,18 @@
   <link rel="icon" type="image/png" href="https://drive.google.com/uc?export=view&id=1uu1KlWaqgNGa1rFZNAGC5f-JD9InwkEY">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="inde3x.css">
-  <title>CardName</title>
+  <title>RyznTobzAbout</title>
 </head>
 <body>
+  <center>
    <div class="ref">
-  <a href="index.html"><span id="id">&nbsp;Aboud&nbsp;</span></a>
+  <a href="index.html"><span id="id">&nbsp;About&nbsp;</span></a>
  <a href="Download.html"><span>&nbsp;Dloader&nbsp;</span></a>
  <a href="Image.html"><span>&nbsp;Image&nbsp;</span></a>
  <a href="Create.html"><span>&nbsp;Create&nbsp;</span></a>
  </div>
-	<div class="card">
-	  <center>
-	    <div class="box"></div>
+	<div id="card" onclick="onc()">
+	  <div class="box"></div>
 	   <img class="i" src="1.jpg">
 	  <div class="titli">Nama</div>
 	  <div class="name">Firmansyah</div>
@@ -28,7 +28,48 @@
 	    </div>
 	  <div class="titl">Made with</div>
 	  <div class="name">HTML/CSS/JS</div>
+	  <p>
+	  <div id="Tekan">Info</div>
+	  </p>
 	  </center>
 	</div>
+	<div id="idk">
+	  <center>
+	  <br>
+	  <div class="name" style="text-decoration: underline;">Contact Me</div>
+	  </br>
+	  <img src="w.png">
+
+	  <div class="titl">
+	  <a href="https://api.whatsapp.com/send/?phone=62895703023772">
+	    WhatsApp
+	    </a>
+	  </div>
+	  <img src="t.png">
+
+	  <div class="titl">
+	    	  <a href="https://t.me/YuiTobz">Telegram</a>
+	    	  </div>
+	  <img src="f.png">
+	  <div class="titl">
+	 <a href="https://m.facebook.com/profile.php?ref=bookmarks">
+	    Facebook
+	 </a>
+	    </div>
+	  <br>
+	  <p onclick="onc1()">ryzntobz.github.io<br>
+	  Code by Firmansyah</p>
+	  </center>
+	</div>
+<script>
+function onc(){
+  document.getElementById('card').style.display="none"
+  document.getElementById('idk').style.display = "block"
+}
+function onc1(){
+  document.getElementById('card').style.display="block"
+  document.getElementById('idk').style.display = "none"
+}
+</script>
 </body>
 </html>
